@@ -118,3 +118,6 @@ style = "fg:#565f89"
 [character]
 success_symbol = "[❯](bold fg:#7aa2f7)"
 error_symbol = "[❯](bold fg:#f7768e)"
+
+# Increase timeout for slow commands (nvm node)
+command_timeout = 1000
