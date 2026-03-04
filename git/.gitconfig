@@ -1,0 +1,42 @@
+[user]
+	name = Den
+	email = fdenimar@gmail.com
+
+[credential]
+	helper = store
+
+[core]
+	editor = nvim
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	dark = true
+	line-numbers = true
+	syntax-theme = tokyonight_night
+
+[merge]
+	conflictStyle = diff3
+
+[diff]
+	colorMoved = default
+
+[init]
+	defaultBranch = main
+
+[push]
+	autoSetupRemote = true
+
+[pull]
+	rebase = true
+
+[alias]
+	st = status -sb
+	co = checkout
+	br = branch
+	cm = commit
+	lg = log --oneline --graph --decorate --all
+	last = log -1 HEAD
