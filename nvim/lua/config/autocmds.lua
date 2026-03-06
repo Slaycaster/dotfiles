@@ -30,3 +30,16 @@ autocmd("BufReadPost", {
     end
   end,
 })
+
+-- Open neo-tree on startup when opening a directory
+autocmd("VimEnter", {
+  callback = function(data)
+    local directory = vim.fn.isdirectory(data.file) == 1
+    if directory then
+      vim.cmd.cd(data.file)
+      vim.cmd("Neotree show")
+      -- Focus the editor window (right side)
+      vim.cmd("wincmd l")
+    end
+  end,
+})
