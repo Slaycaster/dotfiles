@@ -14,9 +14,11 @@ return {
         floats = "dark",
       },
     },
-    config = function(_, opts)
-      require("tokyonight").setup(opts)
-      vim.cmd("colorscheme tokyonight-night")
-    end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "tokyonight-night",
+    },
   },
 }

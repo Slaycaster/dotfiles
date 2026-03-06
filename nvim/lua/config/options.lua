@@ -1,8 +1,5 @@
 local opt = vim.opt
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 opt.clipboard = "unnamedplus"
 opt.number = true
 opt.relativenumber = true
@@ -23,4 +20,3 @@ opt.splitright = true
 opt.mouse = "a"
 opt.updatetime = 250
 opt.timeoutlen = 300
-opt.showmode = false
